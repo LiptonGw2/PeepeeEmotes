@@ -35,6 +35,17 @@ export default {
         dicks = dicks.filter(x => x.createdBy == "Badvice");
       return dicks;
     }
+  },
+  mounted() {
+
+    document.addEventListener("visibilitychange", () => {
+      if (document.visibilityState == "visible") {
+        document.title = "I LIKE DICKS HAHAHA jtm";
+      } else {
+        document.title = "GAY PORN - ROUGH ANAL FISTING";
+      }
+    });
+
   }
 }
 </script>
