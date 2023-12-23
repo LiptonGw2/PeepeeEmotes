@@ -18,7 +18,7 @@ for (let dickDir of dickDirs) {
         dickData.push({
             createdBy: dickDir,
             name: dickName,
-            path: "/img/" + dickDir + "/" + file,
+            path: "img/" + dickDir + "/" + file,
             date: fileStat.mtime
         });
     }
