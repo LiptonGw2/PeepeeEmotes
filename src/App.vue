@@ -37,7 +37,6 @@ export default {
     }
   },
   mounted() {
-
     document.addEventListener("visibilitychange", () => {
       if (document.visibilityState == "visible") {
         document.title = "I LIKE DICKS HAHAHA jtm";
@@ -45,17 +44,28 @@ export default {
         document.title = "GAY PORN - ROUGH ANAL FISTING";
       }
     });
-
   }
 }
 </script>
 
 <template>
-  <div>
-    <input type="text" title="Search..." placeholder="Search..." v-model="search">
-    <label style="margin-right:10px;"><input type="checkbox" class="checkbox" v-model="gifs"> .gif</label>
-    <label style="margin-right:10px;"><input type="checkbox" class="checkbox" v-model="pngs"> .png</label>
-    <label style="margin-right:10px;"><input type="checkbox" class="checkbox" v-model="Badvice"> Badvice Quality</label>
+  <div class="topContainer">
+    <div>
+      <input type="text" title="Search..." placeholder="Search..." v-model="search">
+      <label style="margin-right:10px;"><input type="checkbox" class="checkbox" v-model="gifs"> .gif</label>
+      <label style="margin-right:10px;"><input type="checkbox" class="checkbox" v-model="pngs"> .png</label>
+      <label style="margin-right:10px;"><input type="checkbox" class="checkbox" v-model="Badvice"> Badvice Quality</label>
+    </div>
+    <div class="discord-invites">
+      <a href="https://discord.gg/wWvVNpQCAm" target="_blank">
+        <i class="discord-icon"></i>
+        <!-- <img src="@/assets/img/discord.png"> -->
+        Join Discord
+      </a>
+      <!-- <a href="https://discord.gg/4FRYBfhrqy" target="_blank">Discord Dick Emotes 2</a>
+      <a href="https://discord.gg/d4z8HAGx2B" target="_blank">Discord Dick Emotes 3</a>
+      <a href="https://discord.gg/yPwvmFg5Ar" target="_blank">Discord Dick Emotes 4</a> -->
+    </div>
   </div>
   <div class="dicks">
     <Dick v-for="d in filteredDicks" :dick="d"></Dick>
@@ -63,6 +73,28 @@ export default {
 </template>
 
 <style>
+.topContainer {
+  display: flex;
+}
+
+.topContainer>div {}
+
+.discord-invites {
+  /* flex-grow: 1; */
+}
+
+.discord-invites a {
+  border: 1px solid #980298;
+  border-radius: 20px;
+  padding: 5px;
+  display: block;
+  background: #ff00d9;
+  color: black;
+  font-weight: bold;
+}
+
+
+
 .dicks {
   position: flex;
   flex-wrap: wrap;

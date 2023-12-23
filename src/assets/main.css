@@ -184,3 +184,10 @@ input[type="radio"].checkbox::before {
 input[type="radio"].checkbox:checked::before {
   transform: scale(.5);
 }
+
+.discord-icon {
+  background-image: url("@/assets/img/discord.png");
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+}
