@@ -185,9 +185,32 @@ input[type="radio"].checkbox:checked::before {
   transform: scale(.5);
 }
 
+.topContainer {
+  display: flex;
+}
+
+.discord-invites a {
+  border: 1px solid #980298;
+  border-radius: 20px;
+  padding: 5px;
+  display: block;
+  background: #ff00d9;
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.discord-invites a:hover {
+  background: #fd73ff;
+  transform: scale(1.05);
+  transition: transform 1s;
+  font-weight: bolder;
+}
+
 .discord-icon {
-  background-image: url("@/assets/img/discord.png");
-  width: 16px;
-  height: 16px;
+  background-image: url("@/assets/discord.png");
+  width: 24px;
+  height: 24px;
   display: inline-block;
+  vertical-align: text-bottom;
 }

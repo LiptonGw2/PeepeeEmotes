@@ -58,13 +58,9 @@ export default {
     </div>
     <div class="discord-invites">
       <a href="https://discord.gg/wWvVNpQCAm" target="_blank">
-        <i class="discord-icon"></i>
-        <!-- <img src="@/assets/img/discord.png"> -->
         Join Discord
+        <i class="discord-icon"></i>
       </a>
-      <!-- <a href="https://discord.gg/4FRYBfhrqy" target="_blank">Discord Dick Emotes 2</a>
-      <a href="https://discord.gg/d4z8HAGx2B" target="_blank">Discord Dick Emotes 3</a>
-      <a href="https://discord.gg/yPwvmFg5Ar" target="_blank">Discord Dick Emotes 4</a> -->
     </div>
   </div>
   <div class="dicks">
@@ -73,27 +69,6 @@ export default {
 </template>
 
 <style>
-.topContainer {
-  display: flex;
-}
-
-.topContainer>div {}
-
-.discord-invites {
-  /* flex-grow: 1; */
-}
-
-.discord-invites a {
-  border: 1px solid #980298;
-  border-radius: 20px;
-  padding: 5px;
-  display: block;
-  background: #ff00d9;
-  color: black;
-  font-weight: bold;
-}
-
-
 
 .dicks {
   position: flex;
